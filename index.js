@@ -70,7 +70,7 @@ function is31Flavors(originalFlavors){
     return false;
   }
  };
-console.log(is31Flavors(originalFlavors));
+//console.log(is31Flavors(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -86,11 +86,11 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
- }
-
-
+function addFlavor(originalFlavors, newFlavor){
+    originalFlavors.unshift(newFlavor);
+    return originalFlavors;
+ };
+//console.log(addFlavor(originalFlavors, 'Rainbow Sherbert'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -104,10 +104,11 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
-}
-
+function removeLastFlavor(originalFlavors){
+    originalFlavors.pop();
+    return originalFlavors;
+};
+//console.log(removeLastFlavor(originalFlavors));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
