@@ -123,10 +123,10 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
-}
-
+function getFlavorByIndex(originalFlavors, index){
+  return originalFlavors[index];
+};
+//console.log(getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -143,10 +143,15 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(originalFlavors, flavor){
+  for (let i = 0; i < originalFlavors.length; i++) {
+    if (originalFlavors[i] === flavor) {
+      originalFlavors.splice(i, 1);
+    }
+  }
+  return originalFlavors;
 }
-
+//console.log(removeFlavorByName(originalFlavors, 'Vanilla'));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -168,10 +173,16 @@ Use the filterByWord function below to do the following:
 */
 
 
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(originalFlavors, flavor){
+  let filteredFlavor = [];
+  for (let i = 0; i < originalFlavors.length; i++) {
+    if (originalFlavors[i].includes(flavor)) {
+      filteredFlavor.push(originalFlavors[i]);
+    }
+  }
+  return filteredFlavor;
 }
-
+//console.log(filterByWord(originalFlavors, 'Chocolate'));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
